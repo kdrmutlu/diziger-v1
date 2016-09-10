@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:600);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
 /* Genel */
 body {
     background-image: url('images/arkaplan.png');
@@ -9,9 +12,13 @@ body {
 
 /* Navbar */
 .navbar-default{ margin-left: 0px; padding-left: 0px; background: #333;}
-.navbar-default .navbar-nav >li>a {font-family: 'Josefin Sans', sans-serif; background-color:#333; color:#FFF; font-size:15px; border-bottom: solid 2px #900;}
+.navbar-default .navbar-nav >li>a {font-family: 'Josefin Sans', sans-serif; background-color:#333; color:#FFF; font-size:14px; border-bottom: solid 2px #900;}
 .navbar-default .navbar-nav >li>a:hover{color:#FFF;}
 .navbar-default .navbar-nav li:hover{background-color:#999;}
+
+/* Aside */
+.panel-default{border-radius:0px; }
+.panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px;}
 
 /* Footer */
 footer {background-color:#333; color:#FFF;}
