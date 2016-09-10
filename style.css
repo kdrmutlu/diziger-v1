@@ -1,3 +1,4 @@
+/* Genel */
 body {
     background-image: url('images/arkaplan.png');
     background-repeat: repeat;
@@ -6,7 +7,20 @@ body {
 .container-fluid{ max-width:1008px; margin: 0 auto;}
 .container{ max-width:1008px; margin: 0 auto;}
 
+/* Navbar */
 .navbar-default{ margin-left: 0px; padding-left: 0px; background: #333;}
 .navbar-default .navbar-nav >li>a {font-family: 'Josefin Sans', sans-serif; background-color:#333; color:#FFF; font-size:15px; border-bottom: solid 2px #900;}
 .navbar-default .navbar-nav >li>a:hover{color:#FFF;}
 .navbar-default .navbar-nav li:hover{background-color:#999;}
+
+/* Footer */
+footer {background-color:#333; color:#FFF;}
+.sosyal{margin-bottom: 5px; margin-right: 1px; opacity: 1;}
+.sosyal:hover{opacity: 0.7;}
+.fbaslik{font-family: 'Bree Serif', sans-serif; font-size:14px;}
+.altmenu {list-style-type: none; margin: 0 auto; padding: 0px;}
+.altmenu >li>a{font-family: sans-serif; color:#FFF; font-size:12px; text-decoration: none;}
+.altmenu >li>a:hover{color: olive; transition-duration:0.5s;}
+.cizgi {border-bottom: 2px solid #ffffff; margin-bottom: 15px; margin-top: 8px;}
+.altyazi {font-family: sans-serif; font-size: 12px; color: #FFF; }
+.copy {font-family: sans-serif; font-size: 10px; color: #999;}
