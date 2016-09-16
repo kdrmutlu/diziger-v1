@@ -50,3 +50,6 @@ footer {background-color:#333; color:#FFF;}
     padding-right: 10px;
     padding-left: 10px;
     }
+.haberbaslik a{text-decoration: none; color: #333;}
+.haberbaslik a:hover{color: #900; transition-duration:0.5s;}
+.resimlink:hover img{opacity: 0.8; transition-duration:0.3s;}
