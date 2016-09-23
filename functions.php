@@ -6,6 +6,9 @@ register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'diziger' ),
 ) );
 
+//Sidebar
+register_sidebars(1, array('name'=>'Sidebar'));
+
 //Resim
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'bizim', 1366, 768, array('left', 'top'), true );

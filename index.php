@@ -39,29 +39,5 @@
         </div>
       </div>
       
-<!-- Aside -->
-      <div class="col-md-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">FACEBOOK</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">YAZARLAR</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- /Aside -->
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
