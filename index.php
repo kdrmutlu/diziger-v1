@@ -15,7 +15,7 @@
               }
               else{
               ?>
-                 <img class="card-img-top img-responsive" src="<?php bloginfo("template_url"); ?>/images/1.jpg" alt="Card image cap">
+                 <img class="card-img-top img-responsive" src="<?php bloginfo("template_url"); ?>/images/diziger.png" alt="Card image cap">
               <?php } ?>
               <p class="resimYazisi"><?php the_category(', ') ?></p>
               </div></a>
@@ -29,9 +29,16 @@
         <?php else : ?>
         Bu kategoride makale bulunmuyor.
         <?php endif; ?>
+        
+          <div class="col-md-12">
+            <div class="row">
+              <div class="sayfalama"><?php sayfalama(); ?></div>
+            </div>
+          </div>
 
         </div>
       </div>
+      
 <!-- Aside -->
       <div class="col-md-4">
         <div class="panel panel-default">
