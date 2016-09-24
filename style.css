@@ -84,3 +84,5 @@ h3 {margin-top: 5px; margin-bottom: 5px; line-height: 1.4em;}
     }
 .wp-pagenavi a:hover {background:#2c2c2c;color:#FFF;}
 .wp-pagenavi span.current {color:#FFF;font-weight:bold;background:#2c2c2c;}
+
+.img-circle{width: 70px; height: 70px;}
