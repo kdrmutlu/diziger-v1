@@ -11,7 +11,7 @@ register_sidebar( array(
         'name' => __( 'Sağ bileşen', 'diziger' ),
         'id' => 'sidebar-right',
         'description' => __( 'Sağ tarafta gözükecek bileşen alanı.', 'diziger' ),
-        'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="panel panel-default">',
+        'before_widget' => '<div class="panel panel-default">',
         'after_widget'  => '</div></li>',
         'before_title'  => '<div class="panel-heading"><h3 class="panel-title">',
         'after_title'   => '</h3></div>',

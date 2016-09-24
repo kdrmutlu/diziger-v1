@@ -1,9 +1,9 @@
 /*
 Theme Name: diziger
-Theme URI: http://www.kadirmutlu.xyz
+Theme URI: http://www.diziger.com
 Description: Kadir MUTLU tarafından hazırlanmıştır.
 Author: Kadir MUTLU
-Author URI: http://www.kadirmutlu.xyz
+Author URI: http://www.diziger.com
 Version: 1.0
 */
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:600);
@@ -26,12 +26,7 @@ body {
 
 /* Sidebar */
 .panel-default{border-radius:0px; }
-.panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px; margin: 0px; padding-left: 0px;}
-
-
-h3{-webkit-margin-before: 0em;}
-
-
+.panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px; margin: 0px;}
 
 /* Footer */
 footer {background-color:#333; color:#FFF;}
