@@ -24,9 +24,14 @@ body {
 .navbar-default .navbar-nav >li>a:hover{color:#FFF;}
 .navbar-default .navbar-nav li:hover{background-color:#999;}
 
-/* Aside */
+/* Sidebar */
 .panel-default{border-radius:0px; }
-.panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px;}
+.panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px; margin: 0px; padding-left: 0px;}
+
+
+h3{-webkit-margin-before: 0em;}
+
+
 
 /* Footer */
 footer {background-color:#333; color:#FFF;}

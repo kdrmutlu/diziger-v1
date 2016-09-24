@@ -7,7 +7,15 @@ register_nav_menus( array(
 ) );
 
 //Sidebar
-register_sidebars(1, array('name'=>'Sidebar'));
+register_sidebar( array(
+        'name' => __( 'Sağ bileşen', 'diziger' ),
+        'id' => 'sidebar-right',
+        'description' => __( 'Sağ tarafta gözükecek bileşen alanı.', 'diziger' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s"><div class="panel panel-default">',
+        'after_widget'  => '</div></li>',
+        'before_title'  => '<div class="panel-heading"><h3 class="panel-title">',
+        'after_title'   => '</h3></div>',
+    ) );
 
 //Resim
 add_theme_support( 'post-thumbnails' );
