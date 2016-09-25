@@ -133,5 +133,17 @@ margin-top: 10px;
 padding: 0;
 }
 
+.etiket{margin-left: 20px; margin-right: 20px; margin-top: 10px; text-align: justify;}
+.etiket a{
+    text-decoration: none;
+    background-color: #900;  
+    color: #FFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 2;
+    }
+
 /* Page */
 .pageicerik{padding-bottom: 20px;}

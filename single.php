@@ -22,16 +22,16 @@
                 
                 <h1 class="singlebaslik"><?php the_title(); ?></h1>
                 <div class="icerik"><?php the_content(); ?></div>
-
-    <div class="author-box">
-		<div class="image">
-			<div class="img-responsive img-circle"><?php echo get_avatar( get_the_author_email(), '70' ); ?></div>
-		</div>
-		<div class="info">
-			<h6 class="singleyazar"><?php the_author_firstname(''); ?> <?php the_author_lastname(''); ?></h6>
-            <p><?php the_author_description(''); ?></p>
-		</div>
-	</div>
+                <div class="etiket"><?php echo get_the_tag_list('<p>','  ','</p>'); ?></div>
+              <div class="author-box">
+                <div class="image">
+                  <div class="img-responsive img-circle"><?php echo get_avatar( get_the_author_email(), '70' ); ?></div>
+                </div>
+                <div class="info">
+                  <h6 class="singleyazar"><?php the_author_firstname(''); ?> <?php the_author_lastname(''); ?></h6>
+                        <p><?php the_author_description(''); ?></p>
+                </div>
+              </div>
               </div>
             </div>
           </div>
