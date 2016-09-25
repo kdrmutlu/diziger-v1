@@ -156,4 +156,7 @@ padding: 0;
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 5px;
-    line-height: 2;}
+    line-height: 2;
+    }
+/* Arama */
+#custom-search-input{margin-bottom: 10px;}

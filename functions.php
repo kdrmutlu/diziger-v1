@@ -56,6 +56,27 @@ if ($paged < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($p
 echo "</div></center>\n";
 }
 }
+
+//Arama
+function my_search_form( $form ) {
+
+    $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+    <div id="custom-search-input">
+        <div class="input-group col-md-12">
+            <input type="text" class="  search-query form-control" value="' . get_search_query() . '" name="s" id="s" placeholder="Ara" />
+            <span class="input-group-btn">
+                <button class="btn btn-danger" type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'">
+                    <span class=" glyphicon glyphicon-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+    </form>';
+
+    return $form;
+}
+                        
+add_filter( 'get_search_form', 'my_search_form' );
 ?>
 
 <?php
