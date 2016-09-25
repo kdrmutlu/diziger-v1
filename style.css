@@ -28,6 +28,11 @@ body {
 .panel-default{border-radius:0px; }
 .panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px; margin: 0px;}
 
+/* Son Yazılar */
+.widgetyazi a{color: #333;text-decoration: none;}
+.widgetyazi a:hover{color: #900;}
+.img-circle{width: 70px; height: 70px;}
+
 /* Footer */
 footer {background-color:#333; color:#FFF;}
 .sosyal{margin-bottom: 5px; margin-right: 1px; opacity: 1;}
@@ -39,6 +44,10 @@ footer {background-color:#333; color:#FFF;}
 .cizgi {border-bottom: 2px solid #ffffff; margin-bottom: 15px; margin-top: 8px;}
 .altyazi {font-family: sans-serif; font-size: 12px; color: #FFF; }
 .copy {font-family: sans-serif; font-size: 10px; color: #999; margin-top:30px;}
+#menu-footer-menu li{list-style: none; margin: 0 auto; padding: 0px;}
+#menu-footer-menu >li>a{font-family: sans-serif; color:#FFF; font-size:12px; text-decoration: none;}
+#menu-footer-menu >li>a:hover{color: olive; transition-duration:0.5s;}
+#menu-footer-menu{padding-left: 0px;}
 
 /* İçerik */
 .haberbaslik{font-size: 16px; font-weight: bold; min-height: 69px; margin-left: 10px; margin-right: 10px; border-bottom: solid 3px #900;}
@@ -85,4 +94,41 @@ h3 {margin-top: 5px; margin-bottom: 5px; line-height: 1.4em;}
 .wp-pagenavi a:hover {background:#2c2c2c;color:#FFF;}
 .wp-pagenavi span.current {color:#FFF;font-weight:bold;background:#2c2c2c;}
 
-.img-circle{width: 70px; height: 70px;}
+/* Single */
+.singlebaslik{font-size: 20px; font-weight: bold; margin-left: 20px; margin-right: 20px;}
+.icerik{margin-left: 20px; margin-right: 20px; text-align: justify; color: #444;}
+
+.author-box {
+margin-top: 20px;
+padding-top: 20px;
+padding-bottom: 30px;
+border-bottom: 1px solid #f0f0f0; 
+border-top: 1px solid #f0f0f0; 
+}
+.author-box .image {
+float: left;
+margin-right: 10px;
+margin-left: 20px;
+margin-bottom: 20px;
+width: 90px;
+height: 90px;
+padding: 10px; 
+}
+.author-box .info {
+overflow: hidden; 
+margin-right: 20px;
+text-align: justify;
+}
+.author-box .info p {
+color: #666;
+font-weight: 300;
+line-height: 20px; 
+}
+.author-box .info h6 {
+font-size: 14px;
+color: #900;;
+margin: 0;
+margin-bottom: 10px;
+margin-top: 10px;
+padding: 0;
+}

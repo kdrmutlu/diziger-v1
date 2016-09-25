@@ -5,6 +5,11 @@ require_once('wp_bootstrap_navwalker.php');
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'diziger' ),
 ) );
+//Footer Menu
+add_theme_support('menus');
+register_nav_menus(array(
+ 'footer_menu' => 'Footer Menu'
+));
 
 //Sidebar
 register_sidebar( array(
@@ -55,12 +60,12 @@ echo "</div></center>\n";
 
 <?php
 /*
- * Plugin Name: Kategori Bileşeni
- * Plugin URI: http://baransomakli.com
- * Description: Bu bileşen ile çift kategori oluşturacaksınız.
+ * Plugin Name: Diziger Son Yazılar
+ * Plugin URI: http://diziger.com
+ * Description: Bu bileşen ile son yazılar listelenecek.
  * Version: 1.0
  * Author: Baran Somaklı
- * Author URI: http://baransomakli.com
+ * Author URI: http://diziger.com
  */
   
 add_action( 'widgets_init', 'bs_kategori_widgets' );
@@ -74,10 +79,10 @@ class bs_kategori_widget extends WP_Widget {
 function bs_kategori_widget() {
   
  /* Widget settings */
- $widget_ops = array( 'classname' => 'widget_kategori', 'description' => __('Bu bileşen ile kategori da ki abone ol butonu yapabilirsiniz.', 'bs') );
+ $widget_ops = array( 'classname' => 'widget_kategori', 'description' => __('Bu bileşen ile son yazılar listelenecek.', 'bs') );
   
 /* Create the widget */
- $this->WP_Widget( 'bs_kategori_widget', __('Çift Kategori Bileşeni', 'bs'), $widget_ops );
+ $this->WP_Widget( 'bs_kategori_widget', __('Diziger Son Yazılar', 'bs'), $widget_ops );
  }
   
 function widget( $args, $instance ) {
@@ -94,15 +99,16 @@ function widget( $args, $instance ) {
                     <?php while (have_posts()) : the_post(); ?>
                         <li class="media">
                             <div class="media-left">
+                            <a class="resimlink" href="<?php the_permalink(); ?>">
                             <?php if ( has_post_thumbnail() ) {the_post_thumbnail('bizim', array('class' => 'img-circle img-resposive'));
                             }
                             else{
                             ?>
                                 <img src="http://placehold.it/70x70" class="img-circle" width="70px" height="70px">
-                            <?php } ?>
+                            <?php } ?></a>
                             </div>
                             <div class="media-body">
-                                <h4><?php the_title(); ?></h4>
+                                <h4 class="widgetyazi"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                             </div>
                         </li>
                     <?php endwhile; ?>
@@ -125,7 +131,7 @@ function form( $instance ) {
  $instance = wp_parse_args( (array) $instance, $defaults ); ?>
   
  <p>
- Bileşenin Ayalarını Tema Panelinden Yapınız!
+ Bileşenin Ayarlarını Tema Panelinden Yapınız!
  </p>
   <?php
  }

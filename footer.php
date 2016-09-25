@@ -13,10 +13,7 @@
   		<div class="col-md-4"><br />
         <span class="fbaslik">SAYFALAR</span><div class="cizgi"></div>
         <ul class="altmenu">
-          <li><a href="#">Anasayfa</a></li>
-          <li><a href="#">İletişim</a></li>
-          <li><a href="#">Hakkımızda</a></li>
-          <li><a href="#">Yazarlar</a></li>
+          <?php wp_nav_menu( array( 'theme_location' => 'footer_menu')); ?>
         </ul>
       </div>
   		<div class="col-md-4"><br />
