@@ -28,8 +28,10 @@ body {
 .panel-default{border-radius:0px; }
 .panel-default .panel-heading{ background-color:#333; color:#FFF; border-radius:0px; font-family: 'Bree Serif', sans-serif; font-size:14px; margin: 0px;}
 
-/* Son Yazılar */
-.widgetyazi a{color: #333;text-decoration: none;}
+/* Bileşenler */
+.media-body{vertical-align: middle;}
+.widgetyazi{margin: 0px; padding: 0px; line-height: 0.8em;}
+.widgetyazi a{color: #333;text-decoration: none; font-size: 12px; font-weight: bold;}
 .widgetyazi a:hover{color: #900;}
 .img-circle{width: 70px; height: 70px;}
 
