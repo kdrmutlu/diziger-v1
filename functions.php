@@ -78,6 +78,14 @@ function my_search_form( $form ) {
                         
 add_filter( 'get_search_form', 'my_search_form' );
 
+//Youtube
+function responsive_embed($content){
+$content = str_replace('<iframe', '<div class="responsive-youtube"><iframe', $content);
+$content = str_replace('</iframe>', '</iframe></div>', $content);
+return $content;
+}
+add_filter('the_content', 'responsive_embed');
+add_filter('the_excerpt', 'responsive_embed');
 ?>
 
 <?php
