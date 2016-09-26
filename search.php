@@ -28,7 +28,7 @@
           </div>        
         <?php endwhile; ?>
         <?php else : ?>
-        Bu kategoride makale bulunmuyor.
+        <div class="col-md-12">Bu kategoride makale bulunmuyor.</div>
         <?php endif; ?>
         
           <div class="col-md-12">
