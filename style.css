@@ -146,7 +146,7 @@ padding: 0;
     }
 
 /* Page */
-.pageicerik{padding-bottom: 20px;}
+.pageicerik{padding-bottom: 20px; margin: auto;}
 /* Tag */
 .tag{text-decoration: none;
     background-color: #900;  
