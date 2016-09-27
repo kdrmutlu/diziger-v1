@@ -32,6 +32,7 @@
                         <p><?php the_author_description(''); ?></p>
                 </div>
               </div>
+              <div><?php comments_template(); ?></div>
               </div>
             </div>
           </div>
