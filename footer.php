@@ -3,11 +3,11 @@
 	<div class="row">
   		<div class="col-md-4"><br />
         <span class="fbaslik">SOSYAL MEDYADA BİZ</span><div class="cizgi"></div>
-        <a href="#"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-facebook.png" /></a>
-        <a href="#"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-twitter.png" /></a>
-        <a href="#"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-youtube-2.png" /></a><br />
-        <a href="#"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-instagram.png" /></a>
-        <a href="#"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-googleplus.png" /></a>
+        <a href="https://www.facebook.com/diziger/" target="_blank"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-facebook.png" /></a>
+        <a href="https://twitter.com/diziger" target="_blank"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-twitter.png" /></a>
+        <a href="https://www.youtube.com/channel/UCvhRYdjiMmewO6p5hc_3pqg" target="_blank"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-youtube-2.png" /></a><br />
+        <a href="https://www.instagram.com/dizigercom/" target="_blank"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-instagram.png" /></a>
+        <a href="https://plus.google.com/u/0/106731885188155981790" target="_blank"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-googleplus.png" /></a>
         <a href="#"><img class="sosyal" src="<?php bloginfo('template_url'); ?>/images/64-rss.png" /></a><br /><br />
       </div>
   		<div class="col-md-4"><br />
