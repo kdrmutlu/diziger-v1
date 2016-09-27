@@ -327,3 +327,84 @@ function update( $new_instance, $old_instance ) {}
  }
 }
 ?>
+
+<?php
+/*
+ * Plugin Name: İncelemeler
+ * Plugin URI: http://diziger.com
+ * Description: Bu bileşen ile incelemeler listelenecek.
+ * Version: 1.0
+ * Author: Kadir Mutlu
+ * Author URI:http://diziger.com
+ */
+
+add_action( 'widgets_init', 'diziger_inc_widgets' );
+ 
+function diziger_inc_widgets() {
+ register_widget( 'diziger_inc_widget' );
+}
+ 
+class diziger_inc_widget extends WP_Widget {
+ 
+function diziger_inc_widget() {
+ 
+ /* Widget settings */
+ $widget_ops = array( 'classname' => 'widget_inc', 'description' => __('İncelemeleri listeler.', 'diziger') );
+ 
+ /* Create the widget */
+ $this->WP_Widget( 'diziger_inc_widget', __('İncelemeler', 'diziger'), $widget_ops );
+ }
+ 
+function widget( $args, $instance ) {
+ 
+ ?>
+ 
+       <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">İNCELEMELER</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="media-list">
+                    <?php query_posts('showposts=3&category_name=liste'); ?>
+                    <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                        <li class="media">
+                            <div class="media-left">
+                            <a class="resimlink" href="<?php the_permalink(); ?>">
+                            <?php if ( has_post_thumbnail() ) {the_post_thumbnail('bizim', array('class' => 'img-circle img-resposive'));
+                            }
+                            else{
+                            ?>
+                                <img src="http://placehold.it/70x70" class="img-circle" width="70px" height="70px">
+                            <?php } ?></a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="widgetyazi"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                            </div>
+                        </li>
+                    <?php endwhile; ?>
+                    <?php else : ?>
+                    Bu kategoride makale bulunmuyor.
+                    <?php endif; ?>
+                    </ul>
+                </div>
+            </div>
+ 
+ <?php
+ echo $after_widget;
+ }
+ 
+function update( $new_instance, $old_instance ) {}
+ 
+ function form( $instance ) {
+ 
+ $instance = wp_parse_args( (array) $instance, $defaults ); ?>
+ 
+ <p>
+ Bileşen Ayarı Yoktur Şuan Çalışır Durumdadır.
+ </p>
+ 
+ <?php
+ }
+}
+?>
